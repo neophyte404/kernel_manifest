@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
-  <remote name="neo" fetch="https://github.com/neophyte404/" revision="clo" />
+  <remote name="neo" fetch="https://github.com/neophyte404/" revision="main" />
 
   <default revision="master-kernel-build-2022" remote="aosp" sync-j="4" />
   <superproject name="kernel/superproject" remote="aosp" revision="common-android13-5.15-lts" />
@@ -19,7 +19,7 @@
     <linkfile src="abi" dest="build/abi" />
     <linkfile src="static_analysis" dest="build/static_analysis" />
   </project>
-  <project path="topaz" name="msm-5.15" remote="neo" />
+  <project path="topaz" name="kernel_xiaomi_bengal_515" remote="neo" />
   <project path="kernel/tests" name="kernel/tests" />
   <project path="kernel/configs" name="kernel/configs" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android13-5.15" />
